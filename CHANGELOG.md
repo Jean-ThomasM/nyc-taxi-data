@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.0-rc.2 (2025-10-17)
+
+### Features
+
+- Test guardian
+  ([`a667df7`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/a667df7007c464f57b9824edbf2a1e28f15b83f4))
+
+
 ## v1.0.0-rc.1 (2025-10-17)
 
 - Initial Release
