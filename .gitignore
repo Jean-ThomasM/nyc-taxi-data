@@ -1,3 +1,6 @@
+jt_test/
+greg_test/
+
 # Python
 __pycache__/
 *.py[cod]
