@@ -103,7 +103,7 @@ def main():
     if not data_dir.exists:
         os.mkdir(data_dir)
     base_url = "https://d37ci6vzurychx.cloudfront.net/trip-data"
-    classe_nyctaxi_download = NYCTaxiDataDownloader(data_dir=data_dir,base_url=base_url, year=2024)
+    classe_nyctaxi_download = NYCTaxiDataDownloader(data_dir=data_dir,base_url=base_url, year=datetime.now().year)
     fichiers_telecharges = classe_nyctaxi_download.download_all_available()
     print(f"Les fichiers des mois {fichiers_telecharges} ont été téléchargés")
 
