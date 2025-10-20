@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.0-rc.5 (2025-10-20)
+
+### Bug Fixes
+
+- Correction year avec datetime ([#7](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/7),
+  [`c809bfc`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/c809bfcc545395fff6ec415440217e955f4ac4a3))
+
+
 ## v1.0.0-rc.4 (2025-10-20)
 
 ### Features
