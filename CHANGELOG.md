@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.0-rc.4 (2025-10-20)
+
+### Features
+
+- Ajout import_to_duckdb.py ([#6](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/6),
+  [`6c5f30c`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/6c5f30c464a3c14c07f6956eef38706de1a7c99c))
+
+
 ## v1.0.0-rc.3 (2025-10-17)
 
 ### Chores
