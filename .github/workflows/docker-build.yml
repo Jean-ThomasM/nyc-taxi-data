@@ -1,0 +1,27 @@
+name: Build & Push Docker on PR
+
+on:
+  pull_request:
+    branches: [ "main", "develop" ]   
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build-and-push:
+    if: ${{ github.event.pull_request.head.repo.fork == false }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build & Push to GHCR
+        uses: matootie/github-docker@v3.1.0
+        with:
+          accessToken: ${{ secrets.PAT }} 
+          containerRegistry: true         
+          tag: |
+            pr-${{ github.event.number }}
+            sha-${{ github.sha }}
+  
