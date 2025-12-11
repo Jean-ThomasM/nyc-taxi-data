@@ -854,7 +854,7 @@ wheels = [
 
 [[package]]
 name = "semantic-release"
-version = "1.0.0rc6"
+version = "1.0.0"
 source = { editable = "." }
 dependencies = [
     { name = "duckdb" },
