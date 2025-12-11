@@ -2,6 +2,28 @@
 
 <!-- version list -->
 
+## v1.0.0-rc.6 (2025-12-11)
+
+### Chores
+
+- Update dependencies for uv in pyproject.toml & uv.lock
+  ([#9](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/9),
+  [`3dfb153`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/3dfb1535d6bf7090030af9a3a7c51c4a72a31ddf))
+
+### Features
+
+- Add Docker config & workflow to push image into github registry
+  ([#9](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/9),
+  [`3dfb153`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/3dfb1535d6bf7090030af9a3a7c51c4a72a31ddf))
+
+- Add scripts to create postgre table & ingest nyc-taxi in it
+  ([#9](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/9),
+  [`3dfb153`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/3dfb1535d6bf7090030af9a3a7c51c4a72a31ddf))
+
+- Fast api crud ([#9](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/9),
+  [`3dfb153`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/3dfb1535d6bf7090030af9a3a7c51c4a72a31ddf))
+
+
 ## v1.0.0-rc.5 (2025-10-20)
 
 ### Bug Fixes
