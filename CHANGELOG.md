@@ -2,6 +2,74 @@
 
 <!-- version list -->
 
+## v1.0.0-rc.6 (2025-12-11)
+
+### Chores
+
+- Update dependencies for uv in pyproject.toml & uv.lock
+  ([#9](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/9),
+  [`3dfb153`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/3dfb1535d6bf7090030af9a3a7c51c4a72a31ddf))
+
+### Features
+
+- Add Docker config & workflow to push image into github registry
+  ([#9](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/9),
+  [`3dfb153`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/3dfb1535d6bf7090030af9a3a7c51c4a72a31ddf))
+
+- Add scripts to create postgre table & ingest nyc-taxi in it
+  ([#9](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/9),
+  [`3dfb153`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/3dfb1535d6bf7090030af9a3a7c51c4a72a31ddf))
+
+- Fast api crud ([#9](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/9),
+  [`3dfb153`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/3dfb1535d6bf7090030af9a3a7c51c4a72a31ddf))
+
+
+## v1.0.0-rc.5 (2025-10-20)
+
+### Bug Fixes
+
+- Correction year avec datetime ([#7](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/7),
+  [`c809bfc`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/c809bfcc545395fff6ec415440217e955f4ac4a3))
+
+
+## v1.0.0-rc.4 (2025-10-20)
+
+### Features
+
+- Ajout import_to_duckdb.py ([#6](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/6),
+  [`6c5f30c`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/6c5f30c464a3c14c07f6956eef38706de1a7c99c))
+
+
+## v1.0.0-rc.3 (2025-10-17)
+
+### Chores
+
+- Rajout dossiers jt_test et greg_test dans .gitignore
+  ([#5](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/5),
+  [`2795774`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/2795774b42988475eecea87e15d38f8e1194a17b))
+
+- Update dépendances ([#5](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/5),
+  [`2795774`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/2795774b42988475eecea87e15d38f8e1194a17b))
+
+### Features
+
+- Création script scraping nyc taxi download_data.py
+  ([#5](https://github.com/Jean-ThomasM/nyc-taxi-data/pull/5),
+  [`2795774`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/2795774b42988475eecea87e15d38f8e1194a17b))
+
+
+## v1.0.0-rc.2 (2025-10-17)
+
+### Features
+
+- Test guardian
+  ([`a667df7`](https://github.com/Jean-ThomasM/nyc-taxi-data/commit/a667df7007c464f57b9824edbf2a1e28f15b83f4))
+
+
+## v1.0.0-rc.1 (2025-10-17)
+
+- Initial Release
+
 ## v2.0.0-rc.1 (2025-10-17)
 
 ### Features

@@ -9,7 +9,7 @@ name = "semantic-release"
 # Version actuelle du package - ATTENTION: Cette valeur est automatiquement
 # mise à jour par semantic-release lors d'un release. Ne la modifiez pas manuellement.
 
-version = "2.0.0-rc.1"
+version = "1.0.0-rc.6"
 
 # Description courte qui apparaît dans les métadonnées du package
 description = "Semantic release for Python packages"
@@ -24,7 +24,16 @@ requires-python = ">=3.13"
 # Liste des dépendances nécessaires au fonctionnement du package
 # Format: "nom-package>=version-minimale"
 dependencies = [
+    "duckdb>=1.4.1",
+    "fastapi>=0.119.1",
+    "ipykernel>=7.0.1",
     "pandas>=2.3.3",
+    "psycopg2-binary>=2.9.11",
+    "pyarrow>=21.0.0",
+    "requests>=2.32.5",
+    "sqlalchemy>=2.0.44",
+    "sqlmodel>=0.0.27",
+    "uvicorn[standard]>=0.38.0",
 ]
 
 # =============================================================================
