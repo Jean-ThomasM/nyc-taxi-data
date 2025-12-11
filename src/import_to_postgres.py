@@ -9,7 +9,7 @@ from database import engine, init_db
 from models import ImportLog
 
 
-# --- Nettoyage (inchangé ou presque) ---
+
 def clean_df(file_path: Path) -> pd.DataFrame:
     print(f"Nettoyage des données pour {file_path.name}...")
     df = pd.read_parquet(file_path)
@@ -38,6 +38,11 @@ def clean_df(file_path: Path) -> pd.DataFrame:
     }
     df = df.rename(columns=column_mapping)
     df = df.dropna(subset=["tpep_pickup_datetime", "tpep_dropoff_datetime"])
+
+    #ancrage du fuseau horaire en America/New_York
+    df["tpep_pickup_datetime"] = df["tpep_pickup_datetime"].dt.tz_localize("America/New_York")
+    df["tpep_dropoff_datetime"] = df["tpep_dropoff_datetime"].dt.tz_localize("America/New_York")
+
     return df
 
 
@@ -153,6 +158,10 @@ def main():
     print(f"📊 Fichiers traités avec succès: {ok}/{len(files)}")
     print(f"📊 Total lignes importées: {total_rows:,}")
 
+    return {
+        "files_imported": ok,
+        "total_rows": total_rows
+    }
 
 if __name__ == "__main__":
     main()

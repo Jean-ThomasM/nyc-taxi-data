@@ -1,21 +1,25 @@
-from sqlmodel import SQLModel, Field
 from typing import Optional
 from datetime import datetime, timezone
+from sqlmodel import SQLModel, Field
+from sqlalchemy import Column, DateTime, Integer, Identity
+
 
 class YellowTaxiTrip(SQLModel, table=True):
     __tablename__ = "yellow_taxi_trips"
-    
+
     id: Optional[int] = Field(
         default=None,
-        primary_key=True,
-        index=True,
+        sa_column=Column(Integer, Identity(always=False),
+        primary_key=True),
     )
     vendor_id: int = Field(description="ID du fournisseur (1=Creative, 2=VeriFone)")
     tpep_pickup_datetime: datetime = Field(
+        sa_column=Column(DateTime(timezone=True)),
         description="Date/heure de prise en charge",
-        index=True,
     )
-    tpep_dropoff_datetime: datetime = Field(description="Date/heure de dépose")
+    tpep_dropoff_datetime: datetime = Field(
+        sa_column=Column(DateTime(timezone=True)), description="Date/heure de dépose"
+    )
     passenger_count: Optional[float] = Field(
         default=None, description="Nombre de passagers (peut être NULL)"
     )
@@ -56,11 +60,13 @@ class YellowTaxiTrip(SQLModel, table=True):
         default=None, description="Frais de congestion CBD (Central Business District)"
     )
 
+
 class ImportLog(SQLModel, table=True):
     __tablename__ = "import_log"
 
     file_name: str = Field(description="Nom du fichier Parquet", primary_key=True)
     import_date: datetime = Field(
+        sa_column=Column(DateTime(timezone=True)),
         default_factory=lambda: datetime.now(timezone.utc),
         description="Date et heure d'importation",
     )
